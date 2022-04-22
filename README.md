@@ -21,7 +21,7 @@ C++实现：nlohmann_json序列化任何结构体，使用较为复杂的json时
 
 ```json
 {
-    "addName:{
+    "addName":{
     "str":"str"
 }
 }
@@ -38,7 +38,7 @@ struct addName
 {
     "addDev":{
         "key":"1",
-        "addName:{
+        "addName":{
     		"str":"str"
 		}
     }
@@ -48,7 +48,7 @@ struct addName
     "addDev":{
         "key":"1"
     },
-    "addName:{
+    "addName":{
     	"str":"str"
 	}
 }
