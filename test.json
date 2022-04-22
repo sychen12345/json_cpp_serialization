@@ -1,0 +1,70 @@
+{
+    "projectId": "45d6sa4d5",
+    "projectName": "modbus串口采集",
+    "status": "disable",
+    "script": "scrivsn6uykv",
+    "configFile": "deviceConfig.json",
+    "process": "addDevice",
+    "interface": "tty",
+    "connectConfig": {
+        "plugins": "modbus-client",
+        "baudrate": "19200",
+        "dataBits": "8",
+        "parity": "None",
+        "stopBit": "1",
+        "sync": "是",
+        "period": "3000",
+        "timeout": "3000",
+        "timeLiness": "300"
+    },
+    "acquisition": [
+        {
+            "id": "qq",
+            "name": "温湿度传感器",
+            "key": "1",
+            "prot": "5555",
+            "ip": "127.0.0.1",
+            "datas": [
+                {
+                    "id": "advantech",
+                    "name": "温度数据",
+                    "dataType": "uint16 AB",
+                    "mod": "r",
+                    "registerNum": "1",
+                    "registerType": "Holding Registers",
+                    "script": "温度数据/10",
+                    "startPos": "1"
+                }
+            ]
+        },
+        {
+            "id": "aaaaa",
+            "name": "温湿度传感器",
+            "key": "1",
+            "prot": "5555",
+            "ip": "127.0.0.1",
+            "datas": [
+                {
+                    "id": "zzz",
+                    "name": "温度数据",
+                    "dataType": "uint16 AB",
+                    "mod": "r",
+                    "registerNum": "1",
+                    "registerType": "Holding Registers",
+                    "script": "温度数据/10",
+                    "startPos": "1"
+                },
+                {
+                    "id": "abc",
+                    "name": "温度数据",
+                    "dataType": "uint16 AB",
+                    "mod": "r",
+                    "registerNum": "1",
+                    "registerType": "Holding Registers",
+                    "script": "温度数据/10",
+                    "startPos": "1"
+                }
+            ]
+        }
+    ]
+}
